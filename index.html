@@ -1,0 +1,339 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/a-tachyons.css">
+    <link rel="stylesheet" href="./css/basscss-grid.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Good Times Coffee Roasters</title>
+</head>
+<body>
+<!-- this web page reuses lots of classes :) -->
+
+<!-- we are splitting the landing page into 3 sections -->
+<!-- TOP is header -->
+<!-- MIDDLE is date -->
+<!-- BOTTOM is call-to-action -->
+<!-- the flex class in tachyons makes the div a flex container and defines the flex direction as vertical columns -->
+<!-- the flex direction is vertical, so the div's children will cover the entire width of the page -->
+<!-- min vh 100 makes our page one hundred viewport height, taking up 100% of the page-->
+
+<!-- the container class will be used consistently throughout our site -->
+<!-- and this keeps the width slightly narrower than the entire viewport -->
+<!-- ths is our header with navigation -->
+<!-- in our navigation are 5 list items -->
+<!-- our first list item includes our logo svg -->
+<!-- one menu item per li -->
+<!-- each li includes an anchor tag as well -->
+<!-- the href of each li points to the location on the page  -->
+<!-- our date section is an h1 -->
+<!-- we use the tachyons tc class to center our text -->
+<!-- the last div is for our CTA button -->
+
+<div class="min-vh-100 container pt4 pb5 flex flex-column justify-between mb5-ns overlay">
+  <header class="header-desktop"></header>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list flex flex-wrap justify-center bold">
+        <li class="flex justify-center mb3 mb4-ns logo-container">
+          <a href="index.html">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 131 40"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="logo-svg"
+            >
+              <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g
+                  id="good_times_hover_states"
+                  transform="translate(-112.000000, -20.000000)"
+                  fill="#414141"
+                >
+                  <g id="Group-13">
+                    <g id="Group-5" transform="translate(112.000000, 20.000000)">
+                      <path
+                        d="M6.74315439,27.5535347 L11.7786005,23.0187357 L17.1428571,28.9460435 L15.1287398,30.760146 L13.9467332,29.4539068 L13.6445086,29.7261289 C13.9045623,30.2824618 13.9779029,30.8802529 13.8651417,31.5182829 C13.7520749,32.1566177 13.3153925,32.8184253 12.5544834,33.5037054 C12.0175688,33.9874864 11.4228984,34.3404911 10.7710835,34.5630242 C10.1192685,34.7852525 9.44056201,34.854756 8.73526952,34.7706202 C8.02967145,34.6867892 7.31093318,34.4426125 6.57905471,34.037785 C5.84748182,33.6329576 5.12782679,33.0403487 4.42070079,32.2587391 L1.93567544,29.512741 C1.24871811,28.7536895 0.749085001,27.9827493 0.436776109,27.2002252 C0.124772803,26.4177011 -0.0200749611,25.6516383 0.0022328169,24.9020369 C0.0245405949,24.1524355 0.211253641,23.4327084 0.561149611,22.7425507 C0.911656753,22.0523931 1.41098428,21.4149728 2.06004894,20.8302898 C2.73142138,20.2257922 3.42846305,19.7956631 4.15147952,19.5392927 C4.874496,19.283532 5.5947622,19.1817154 6.31258372,19.2341479 C7.03040523,19.2868852 7.71919607,19.487165 8.37926183,19.8346826 C9.03932759,20.1825049 9.63705381,20.6522633 10.1724405,21.2436528 L10.3542642,21.4445423 L8.13846007,23.4400245 L7.9566364,23.239135 C7.32040634,22.5358693 6.65606238,22.1670129 5.96421568,22.1313467 C5.27236897,22.0962901 4.59580157,22.3758283 3.93573581,22.9702662 C3.30897892,23.5348297 2.98383542,24.2076115 2.95969412,24.9889163 C2.93585842,25.770221 3.38354191,26.669194 4.30274459,27.6849207 L6.54544025,30.1629645 C8.18185328,31.9712751 9.73881395,32.2102696 11.2160167,30.8802529 C11.8760824,30.2855102 12.2177276,29.6587593 12.2409521,28.9996953 C12.2638711,28.3409362 12.0080956,27.7157095 11.4724033,27.1237104 L8.65245572,29.6633319 L6.74315439,27.5535347 Z"
+                        id="Fill-1"
+                      ></path>
+                      <path
+                        d="M22.0540948,23.3318976 C22.4114999,23.1372707 22.7166242,22.8938345 22.9691619,22.601589 C23.2216997,22.3096486 23.4057526,21.9868974 23.521015,21.6321151 C23.6365831,21.2779429 23.6751058,20.9011964 23.6368888,20.5015706 C23.5989776,20.1025549 23.4678169,19.6980482 23.2437126,19.2883554 L23.0266402,18.8920853 C22.8025359,18.4830026 22.5325713,18.1541503 22.2164405,17.9061382 C21.9003097,17.6584312 21.5615545,17.4872937 21.2004806,17.3924207 C20.8391009,17.2978528 20.4673262,17.2774139 20.0845451,17.3317142 C19.7017639,17.3860145 19.3315179,17.5104781 18.9741128,17.7054101 C18.6167077,17.900037 18.3118891,18.1434732 18.0590457,18.4354136 C17.8065079,18.727354 17.622455,19.0507154 17.5071926,19.4048875 C17.3919303,19.7596699 17.3534075,20.1364163 17.3913188,20.535432 C17.4295358,20.9353629 17.5606964,21.3395646 17.7848007,21.7489523 L18.0015674,22.1449174 C18.2259774,22.5546101 18.4959421,22.8831575 18.8120728,23.1308644 C19.1282036,23.3791816 19.4669588,23.550319 19.8280328,23.644887 C20.1891067,23.73976 20.5611871,23.7595887 20.9439683,23.7055935 C21.3267494,23.6512932 21.6966897,23.5268296 22.0540948,23.3318976 L22.0540948,23.3318976 Z M25.7021338,17.8457367 C26.1503425,18.6648171 26.4071605,19.4637637 26.472588,20.2425765 C26.5380154,21.0213892 26.4499635,21.7553585 26.2084323,22.4441792 C25.966901,23.1333049 25.5997124,23.7577584 25.1068663,24.3175396 C24.614326,24.8773208 24.0303707,25.3413138 23.3553062,25.7092136 C22.6802416,26.0774185 21.9733806,26.3165838 21.2350287,26.4276249 C20.4966769,26.538666 19.7717774,26.5093804 19.0603303,26.3394632 C18.3488832,26.1701561 17.6823792,25.8474048 17.0608184,25.3715145 C16.4395634,24.8956243 15.9048315,24.2482914 15.4563172,23.4292111 L15.3263795,23.191571 C14.8852028,22.3859131 14.6320536,21.5936778 14.5666261,20.8148651 C14.5011987,20.0360523 14.5874162,19.2984223 14.8252786,18.6031955 C15.0634467,17.9073584 15.428801,17.2798544 15.9213413,16.7197681 C16.4138816,16.1599869 16.9978369,15.6956888 17.6729014,15.327789 C18.347966,14.9598892 19.054827,14.7207239 19.7931789,14.6096828 C20.5318365,14.4989468 21.2582646,14.5312829 21.9733806,14.7076064 C22.6888022,14.8839298 23.3571406,15.2100367 23.9780899,15.6856219 C24.5996507,16.1618173 25.1310195,16.8024388 25.5718904,17.6080967 L25.7021338,17.8457367 Z"
+                        id="Fill-3"
+                      ></path>
+                      <path
+                        d="M35.0383207,17.8636864 C35.4278677,17.7355516 35.7739947,17.5497868 36.0773178,17.3066986 C36.3806409,17.0636103 36.6214517,16.7776061 36.8000582,16.4474598 C36.9786647,16.1182331 37.0852127,15.7528343 37.1197022,15.350957 C37.1544997,14.9493863 37.0978383,14.526051 36.950026,14.0809512 L36.8071409,13.6499524 C36.6593286,13.2051591 36.4511596,12.8314837 36.182942,12.5295393 C35.9147243,12.2275949 35.6101694,11.9973814 35.2692774,11.8385924 C34.9286933,11.6801099 34.5637818,11.5927452 34.1745428,11.5777247 C33.7856118,11.5623975 33.3960649,11.6188014 33.0068259,11.7469362 C32.617279,11.8750709 32.2711519,12.0608357 31.9678289,12.303924 C31.6645058,12.5470122 31.423695,12.8336295 31.2450885,13.1631628 C31.066482,13.492696 30.959934,13.8580948 30.9254444,14.2596655 C30.890647,14.6615428 30.9473083,15.0848781 31.0951206,15.5296713 L31.2380058,15.9606702 C31.386126,16.40577 31.593987,16.7791388 31.8622047,17.0810832 C32.1307303,17.3833342 32.4349772,17.6135477 32.7758692,17.7720302 C33.1164533,17.9308192 33.4813649,18.0175708 33.8706038,18.0328979 C34.2595349,18.048225 34.6487738,17.9918212 35.0383207,17.8636864 L35.0383207,17.8636864 Z M39.6475999,13.0975627 C39.9432244,13.9877623 40.0528519,14.8237038 39.9764822,15.6053874 C39.9001125,16.3873774 39.6796259,17.0970235 39.3153302,17.7343254 C38.9513425,18.371934 38.47434,18.9230975 37.8846307,19.387816 C37.2949213,19.8525345 36.6322297,20.2059781 35.8965557,20.4481467 C35.1608817,20.6903153 34.4172013,20.7994445 33.6655143,20.7761473 C32.9138274,20.75285 32.2006332,20.5934479 31.5265477,20.2976343 C30.8521542,20.0021273 30.2504351,19.5628518 29.7207745,18.9804209 C29.1917297,18.3982966 28.7790872,17.6619814 28.4834626,16.7714753 L28.3975468,16.5130599 C28.1068493,15.6375743 27.9993775,14.8086832 28.0757471,14.0266932 C28.1524248,13.2453162 28.3713717,12.5316851 28.7332038,11.8870261 C29.0950359,11.2423671 29.5711146,10.6878316 30.160516,10.2228065 C30.7502253,9.75808803 31.412917,9.40464445 32.1485909,9.16247583 C32.883957,8.92030721 33.6279454,8.81117806 34.3796323,8.83416875 C35.1313193,8.85807907 35.8457452,9.02085317 36.5222943,9.32371722 C37.1988434,9.62658127 37.8021022,10.0695353 38.3311469,10.6516596 C38.8608075,11.2340905 39.2709866,11.9633552 39.561684,12.8388408 L39.6475999,13.0975627 Z"
+                        id="Fill-5"
+                      ></path>
+                      <path
+                        d="M47.9334015,14.7525534 C48.8020395,14.6044643 49.4582093,14.2054805 49.9028188,13.555908 C50.3471256,12.9060296 50.4936137,12.1273381 50.342283,11.2192216 L50.2977918,10.9514986 C50.1461585,10.0436882 49.75512,9.3561755 49.1246765,8.88957254 C48.494233,8.42296959 47.7445408,8.26355967 46.8759028,8.41164873 C46.0069622,8.5597378 45.3492791,8.95137831 44.902551,9.58595833 C44.4558229,10.2211503 44.3105454,11.007185 44.4670213,11.9449805 L44.5118152,12.2130094 C44.6679885,13.1508049 45.0599349,13.8456608 45.6882598,14.2969653 C46.316282,14.7488817 47.0644608,14.9006424 47.9334015,14.7525534 L47.9334015,14.7525534 Z M50.9751478,15.0147689 L50.5777535,15.0826941 C50.5017855,15.3559245 50.398578,15.6221177 50.2678283,15.8815795 C50.1370786,16.1413473 49.9503366,16.3833689 49.7079049,16.6085622 C49.4651705,16.8334495 49.1649305,17.0298817 48.8068821,17.1981648 C48.4488338,17.3661418 48.0045269,17.4955668 47.4745669,17.5861337 C46.7972109,17.701484 46.147397,17.6858796 45.5248227,17.5393204 C44.9019457,17.3930671 44.333245,17.1149412 43.8184181,16.7052485 C43.3035912,16.2955558 42.8662456,15.7616396 42.5066839,15.103194 C42.1471223,14.4453603 41.8916761,13.6623853 41.7400428,12.7542689 L41.6731546,12.3522254 C41.5242453,11.4591015 41.5203107,10.64094 41.6613508,9.89743492 C41.8020883,9.15423586 42.0566265,8.5022156 42.425268,7.94168012 C42.7936069,7.38175658 43.2548627,6.9243327 43.8093383,6.56940849 C44.3632085,6.21479025 44.9715578,5.98102982 45.6340834,5.8681272 C46.5175518,5.71759038 47.2445443,5.76562754 47.8159689,6.01285061 C48.3870908,6.26007368 48.8707436,6.66364699 49.26723,7.22357053 L49.6646243,7.15564538 L48.6370891,0.9937327 L51.4197573,0.519480519 L54.025974,16.1480787 L51.2433058,16.6223308 L50.9751478,15.0147689 Z"
+                        id="Fill-7"
+                      ></path>
+                      <polygon
+                        id="Fill-9"
+                        points="70.9408974 0 82.0779221 1.19633854 81.7866756 4.05258141 77.6761971 3.61119286 76.3484735 16.6233766 73.431505 16.3101232 74.7592286 3.29793944 70.6493506 2.85624287"
+                      ></polygon>
+                      <path
+                        d="M93.9556949,5.23707465 C93.880492,5.52517553 93.7545349,5.78136556 93.5775141,6.00564472 C93.4008027,6.23022493 93.1925247,6.40874512 92.9536085,6.54120529 C92.7140734,6.67366547 92.4507085,6.76157086 92.1638233,6.80552355 C91.8766287,6.84947625 91.5922193,6.83683232 91.3112143,6.76729073 C91.0150448,6.69413659 90.7557031,6.57251406 90.5322607,6.40242315 C90.3088184,6.23233225 90.1243701,6.03364198 89.9792254,5.80605132 C89.8337712,5.5787617 89.7384523,5.32528109 89.6935782,5.04591053 C89.648085,4.76684103 89.6632494,4.48325583 89.7381428,4.19515495 C89.8133457,3.90735511 89.9393029,3.65116509 90.1163237,3.42658488 C90.2927256,3.20230572 90.5006941,3.02378553 90.7402293,2.89132535 C90.979455,2.75886518 91.2391061,2.6697556 91.5188733,2.62399663 C91.7986405,2.57793662 92.0864541,2.59178473 92.3826235,2.66493887 C92.6633191,2.73448046 92.9195661,2.8548988 93.1504359,3.02709703 C93.3809962,3.19899422 93.5691582,3.39888866 93.7149219,3.62617828 C93.8597571,3.85376895 93.9553855,4.10724956 94.0005691,4.38631907 C94.0457527,4.66568962 94.0305884,4.94927481 93.9556949,5.23707465 L93.9556949,5.23707465 Z M83.7930903,14.7471132 L87.5222877,15.6686146 L88.9653788,10.1411116 L85.5029505,9.2855393 L86.1794672,6.69443763 L92.4389483,8.24121123 L90.3190311,16.3595148 L93.5153092,17.1494591 L92.8387926,19.7402597 L83.1168831,17.3382149 L83.7930903,14.7471132 Z"
+                        id="Fill-11"
+                      ></path>
+                      <path
+                        d="M106.281596,25.4545455 L103.664263,24.3160647 L106.844315,17.1692556 C106.972192,16.8818309 106.995498,16.6347306 106.914234,16.4276514 C106.832662,16.2205722 106.67412,16.065945 106.438912,15.9634666 C106.161693,15.8427967 105.906859,15.8300627 105.674718,15.9252646 C105.442578,16.0201632 105.253062,16.2320935 105.107093,16.5607521 L101.981932,23.5844658 L99.364599,22.445985 L102.544651,15.2991759 C102.672528,15.0117512 102.688781,14.7613158 102.593717,14.548476 C102.498346,14.335333 102.339803,14.1804026 102.118396,14.0842912 C101.869082,13.9757489 101.624675,13.9675628 101.385481,14.0597327 C101.146287,14.1515995 100.953705,14.3620138 100.807122,14.6906724 L97.6819618,21.7140829 L95.0649351,20.5756021 L99.5973531,10.3896104 L102.214686,11.5277879 L101.776164,12.5137638 L102.149675,12.676274 C102.397455,12.3427643 102.723127,12.1208288 103.127917,12.0107706 C103.531786,11.9010156 103.976135,11.951042 104.460963,12.1620627 C104.918191,12.3606525 105.252449,12.64929 105.464657,13.0273687 C105.676252,13.4054474 105.75537,13.8032335 105.701704,14.2213333 L106.075522,14.3838435 C106.350901,14.0624614 106.718585,13.8587174 107.178267,13.7726112 C107.637948,13.6868083 108.130443,13.7580581 108.656976,13.986967 C109.349412,14.2880353 109.801427,14.7585871 110.012715,15.3977129 C110.223696,16.0371419 110.149791,16.7608579 109.790387,17.5685577 L106.281596,25.4545455 Z"
+                        id="Fill-13"
+                      ></path>
+                      <path
+                        d="M117.048799,21.8748143 C116.449521,21.4555691 115.853043,21.264671 115.259677,21.3018154 C114.666311,21.3392644 114.170646,21.514026 113.772683,21.8264047 L118.155877,24.8923443 C118.393286,24.4122066 118.417867,23.8943155 118.230242,23.3380621 C118.041684,22.7818087 117.648389,22.2940594 117.048799,21.8748143 L117.048799,21.8748143 Z M112.289112,23.7795331 C112.10491,24.0572031 111.989784,24.3504007 111.943423,24.6594303 C111.896439,24.9687644 111.916352,25.2774896 112.001919,25.5865193 C112.087486,25.8958534 112.230927,26.1899644 112.432553,26.4694612 C112.634179,26.748958 112.884656,26.9934415 113.184295,27.2032163 C113.771127,27.6136321 114.294173,27.8273649 114.754056,27.8441104 C115.213316,27.8608558 115.61439,27.7768241 115.957279,27.5917108 L117.176683,30.1065728 C116.894779,30.2603265 116.562158,30.3924633 116.179442,30.5029833 C115.796725,30.6138077 115.370136,30.6616084 114.900297,30.6466897 C114.429836,30.631771 113.91768,30.5319073 113.36383,30.3474028 C112.809669,30.1628984 112.226571,29.8566089 111.614846,29.4288388 C110.915377,28.9395672 110.359038,28.3839228 109.945518,27.7622099 C109.531686,27.140497 109.267207,26.4758549 109.152703,25.7676746 C109.037577,25.0594943 109.083316,24.3254347 109.289921,23.5648868 C109.496215,22.8046434 109.876131,22.0459223 110.429981,21.2881146 L110.509947,21.1782036 C111.018991,20.4815929 111.604889,19.9317332 112.268265,19.5277112 C112.931329,19.1236891 113.622086,18.8682449 114.341469,18.7622919 C115.060229,18.6560344 115.786457,18.6886119 116.520153,18.8600244 C117.253226,19.0314369 117.944605,19.3441202 118.59429,19.7983785 C119.393016,20.3573721 119.979537,20.9751269 120.35323,21.652252 C120.726612,22.3287682 120.946908,23.0089379 121.013494,23.6927612 C121.080392,24.37628 121.015361,25.0327016 120.819958,25.6620261 C120.624243,26.2913505 120.352608,26.8445593 120.004429,27.3210434 L119.107068,28.5489416 L112.289112,23.7795331 Z"
+                        id="Fill-15"
+                      ></path>
+                      <path
+                        d="M126.156344,31.3989298 C125.878607,31.6182493 125.793701,31.9199256 125.901029,32.3045553 C126.008357,32.6888867 126.323764,33.2943279 126.84725,34.1199839 C127.449961,35.0700701 127.754904,35.9935993 127.760584,36.890273 C127.766564,37.7869467 127.381797,38.5415849 126.607182,39.1535908 L126.502843,39.2359475 C125.64691,39.9121081 124.71773,40.1394843 123.714707,39.918076 C122.711384,39.6969661 121.761277,39.0205071 120.864385,37.8895942 C120.333126,37.2199982 119.966896,36.5802417 119.765095,35.9700261 C119.562996,35.3595122 119.468822,34.7958461 119.481677,34.2787294 C119.494832,33.7613144 119.59349,33.2937311 119.779146,32.8750845 C119.964205,32.4561394 120.184242,32.0995587 120.439558,31.8041487 L122.691353,33.2916424 C122.394482,33.6762721 122.224372,34.1256534 122.180125,34.6391893 C122.135878,35.1527252 122.356215,35.7151977 122.841732,36.3272036 C123.271941,36.8693854 123.650728,37.1755375 123.978991,37.2450633 C124.306655,37.3145891 124.568547,37.2719188 124.765565,37.1164555 C124.880965,37.025147 124.967365,36.9144429 125.024766,36.7849399 C125.081569,36.655437 125.098909,36.4871428 125.07559,36.2800574 C125.05257,36.072972 124.975736,35.828289 124.846285,35.5460084 C124.716235,35.2637277 124.526692,34.929825 124.277954,34.5445984 C123.589441,33.5115587 123.230086,32.5423753 123.198994,31.6373465 C123.168201,30.7326162 123.562833,29.9558968 124.384087,29.3068901 L124.488425,29.2245333 C124.916242,28.8867514 125.365286,28.6820532 125.835556,28.6107371 C126.305527,28.5397193 126.772509,28.5647844 127.236202,28.6871259 C127.699596,28.8088706 128.144454,29.0204319 128.571673,29.3215114 C128.998295,29.6225908 129.376783,29.9809619 129.70654,30.3963262 C130.13645,30.9388064 130.443187,31.4618909 130.625854,31.964983 C130.80882,32.4683736 130.902993,32.9431183 130.908674,33.3889188 C130.914653,33.8353161 130.856355,34.2473981 130.733481,34.62606 C130.610308,35.0047218 130.463816,35.3359391 130.294602,35.6203085 L127.931293,34.2772375 C128.161196,33.9266246 128.264637,33.5536322 128.242813,33.1582603 C128.220391,32.76259 128.049383,32.3624437 127.728894,31.9587168 C127.43591,31.5893051 127.149502,31.3649129 126.870569,31.2852417 C126.590739,31.2058689 126.352764,31.2434666 126.156344,31.3989298"
+                        id="Fill-17"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#schedule">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#register">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="intro-date">
+    <h1 class="heading tc">Good Times Coffee Roasters</h1>
+  </div>
+  <div class="tc">
+    <a class="button" href="#register">Let's Get Caffeinated</a>
+  </div>
+</div>
+<div class="container">
+  <div class="pt5-ns mb4 mb5-ns" id="about">
+    <h1 class="heading heading-orange">
+      About Us:
+    </h1>
+    <!--using the f4 helper class from tachyons-->
+    <div class="sm-col-8 md-col-7 f4">
+      Good Times is a cafe roastery in the heart of Townsville, established in 2019.  We craft custom menus at each of our four cafes and ship coffees around the world. 
+    </div>
+  </div>
+  <!--on small screens we have four units of space between this image-->
+  <!--on larger screens, the margin increases to 5-->
+  <div class="flex flex-wrap justify-between mb5-ns">
+    <!--The class names for our images below are great because we are using our tachyons and basscss toolkits and won't need to write any additional css.-->
+    <!--We are building a responsive grid for our photos below yusing helper classes from basscss.-->
+    <!--The class names use breakpoint-prefixed column utilities to change the grid at different screen widths.-->
+    <!--All breakpoint-based styles in Basscss follow the same naming convention.-->
+    <!----breakpoint-sm (default: min-width 40em)-->
+    <!----breakpoint-md (default: min-width 52em)-->
+    <!----breakpoint-lg (default: min-width 64em)-->
+
+    <!--when screen width is below 640px, our first image takes up all 12 columns-->
+    <!--then, between 640-831px the image takes up 6 columns-->
+    <!--lastly, we make the image take up 5 columns with 5 units of top padding when the screen width is above 832px / 52 em and above-->
+
+    <!--our second image will take up 5 columns and have 5 units of padding with screens at a minimum width of 1024 pixels / 64 em-->
+    <!-- -->
+    <div class="col-12 sm-col-5 md-col-5 pt4-m pt5-l mb4 mb0-ns">
+      <img src="./img/nathan-dumlao-dvuHNTJxIsg-unsplash.jpg" alt="" class="image fade db">
+    </div>
+    <div class="col-12 sm-col-6 md-col-4 mb4 mb0-ns">
+      <img src="./img/benjamin-sow-dSZnxGNlP30-unsplash.jpg" alt="" class="image fade db">
+    </div>
+  </div>
+  <div class="flex flew-wrap justify-between mb4 mb5-ns">
+    <div class="col-12 sm-col-5 md-col-4 sm-indent-1 md-indent-2 pt5-ns mb4 mb0-ns">
+      <img src="./img/alex-shu-CnAN31efuos-unsplash.jpg" alt="" class="image fade db">
+    </div>
+    <div class="col-12 sm-col-5 md-col-4">
+      <blockquote>
+        "Inspirational quote from founder goes here!"
+      </blockquote>
+      <p class="cite">
+        - Tony Tony, Founder
+      </p>
+    </div>
+  </div>
+  <div class="speakers mb4 mb5-ns" id="speakers">
+    <h1 class="heading heading-orange ">
+      Our Locations:
+    </h1>
+    <div class="flex flex-wrap ">
+      <div class="speaker col-6 sm-col-3">
+        <img src="./img/sveta-sha-Ls8o85AWsf0-unsplash.jpg" class="speaker-image">
+        <p class="speaker-name pr2">
+          Downtown
+        </p>
+        <p class="speaker-title pr2">
+          1000 Avenue L
+        </p>
+      </div>
+      <div class="speaker col-6 sm-col-3 mb4">
+        <img src="./img/juliana-kozoski-VIAX0fD_eSY-unsplash.jpg" class="speaker-image">
+        <p class="speaker-name pr2">
+          City Center
+        </p>
+        <p class="speaker-title pr2">
+          24 City Street Road
+        </p>
+      </div>
+      <div class="speaker col-6 sm-col-3">
+        <img src="./img/isis-franca-wIQG-3H3s1g-unsplash.jpg" class="speaker-image">
+        <p class="speaker-name pr2">
+          Business District
+        </p>
+        <p class="speaker-title pr2">
+          123 Street Rd.
+        </p>
+      </div>
+      <div class="speaker col-6 sm-col-3">
+        <img src="./img/juliana-kozoski-VIAX0fD_eSY-unsplash.jpg" class="speaker-image">
+        <p class="speaker-name pr2">
+          Hogwarts Region
+        </p>
+        <p class="speaker-title pr2">
+          911 Diagon Alley
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="mb4 mb5-ns" id="schedule">
+    <h1 class="heading heading-orange">
+      Our Menu:
+    </h1>
+    <!--a combination of flex and overflow auto gives us a scrollbar when the element runs out of space-->
+    <div class="schedule-container flex overflow-auto">
+      <div class="schedule-day">
+        Subscription Options:
+      </div>
+      <div class="schedule flex">
+        <div class="w-20 ph3 schedule-margin">
+          <div class="schedule-time">Free Sample</div>
+          <div class="schedule-event">Free 2 oz sample on us!  If it's your jam, we'll automatically start your monthly sub.</div>
+          <div class="schedule-price">$Free.99</div>
+        </div>
+        <div class="w-20 ph3 schedule-margin">
+          <div class="schedule-time">Seasonal Single Origin</div>
+          <div class="schedule-event">A global experience right at home.  Taste a new coffee region each month.</div>
+          <div class="schedule-price">$15</div>
+        </div>
+        <div class="w-20 ph3 schedule-margin">
+          <div class="schedule-time">French Roast</div>
+          <div class="schedule-event">Little know fact: Dale Cooper himself once called this blend "damn fine".</div>
+          <div class="schedule-price">$10</div>
+        </div>
+        <div class="w-20 ph3 schedule-margin">
+          <div class="schedule-time">Roaster's Pick</div>
+          <div class="schedule-event">Whatever us coffee nerds at Good Times are loving (and drinking), we’ll send to you.</div>
+          <div class="schedule-price">$15</div>
+        </div>
+        <div class="w-20 ph3 schedule-margin">
+          <div class="schedule-time">AC / Decaf</div>
+          <div class="schedule-event">A specially processed decaf that retains the coffee's original flavors.</div>
+          <div class="schedule-price">$13</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="register">
+  <h1 class="heading heading-orange">
+      Join Our Coffee Club:
+  </h1>
+  <div class="flex flex-wrap mb4 mb5-ns">
+    <div class="col-12 sm-col-6 cover register-image"></div>
+    <div class="col-12 sm-col-6 register relative bg-orange orange">
+      <div class="front location flex flex-wrap pa4 items-center bg-orange relative z-2 col-12">
+        <p class="mt0 mb4 col-12">Whole bean coffees @ your doorstep each month!
+          <br> Select your coffee from the options above ☝🏾
+        </p>
+        <p class="mt0 mb4 col-12">Starting at $15 / shipment.
+          <br> Includes free shipping.
+        </p>
+        <button class="button button-small button-outline register-button">Subscribe</button>
+      </div>
+      <!--the action of a form is the attribute that points to where the form needs to send the data-->
+      <!--The method attribute specifies how to send form-data-->
+      <!--The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").-->
+      <!--More info on HTTP Request Methods here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods-->
+      <form
+          action="https://api.superhi.com/api/test/orders"
+          class="back form z-1 pa4 col-12"
+          id="payment-form"
+        >
+          <div class="spinner"></div>
+          <h3 class="mt0 mb2 form-title">Your details:</h3>
+          <div class="form-fields">
+            <!-- the required attribute makes the form unable to submit unless the fields are filled -->
+            <!-- this is a fun bonus built into HTML5 and is helpful for validation -->
+            <input name="name" class="mb2 db" placeholder="Name" id="name" required />
+            <input
+              name="email"
+              class="mb2 db"
+              placeholder="Email"
+              id="email"
+              required
+              type="email"
+            />
+            <div id="card-element" class="mb2"></div>
+            <div id="card-errors" role="alert"></div>
+            <div class="pt2">
+              <button class="button button-small">Complete Subscription</button>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+<div class="flex flex-wrap justify-between pt5-ns mb4 mb5-ns">
+  <div class="col-6 sm-col-5 mb4 mb0-ns flex-grow-1 pa1">
+    <!--db stands for display block-->
+    <img src="./img/swodesh-shakya-Be1q1tIBXTU-unsplash.jpg" class="image fade db">
+  </div>
+  <div class="col-6 sm-col-5 flex-grow-1 pa1">
+    <img src="./img/nathan-dumlao-wl5lJvJhkRM-unsplash.jpg" class="image fade db">
+  </div>
+</div>
+</div>
+<!--we want our footer to take up the whol width of the page, so we do not add it to our container-->
+<!--fun fact: no css written to create footer layout...-->
+<!--it's all in basscss and tachyons-->
+<footer class="footer pv3 pv5-ns">
+  <!--vertically align items with items-center-->
+  <div class="container flex justify-between items-center">
+    <a href="#top" class="footer-link contain bg-center bg-no-repeat"></a>
+    <nav class="footer-nav flex items-center">
+      <a href="https://twitter.com" class="no-underline db">
+          <img src="./icons/twitter.svg" class="db">
+        </a>
+      <a href="https://facebook.com" class="no-underline ml3 db">
+          <img src="./icons/facebook.svg" class="db">
+        </a>
+    </nav>
+  </div>
+</footer>
+<script src="./js/tilt.js"></script>
+<script src="./js/in-view.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

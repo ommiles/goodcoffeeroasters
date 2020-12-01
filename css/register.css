@@ -1,0 +1,118 @@
+.register-image {
+  background-image: url(../img/laura-seidlitz-CbmOg1FtOVY-unsplash.jpg);
+  /* x axis then y axis */
+  background-position: center top;
+}
+
+.bg-orange {
+  /* overwrite the default tachyons background color here */
+  background-color: pink;
+}
+
+input {
+  border: none;
+  /* the line height is not inherited in the input element */
+  /* it has to be explicitly set */
+  line-height: 1.5;
+  font-size: 16px;
+  height: 48px;
+  width: 100%;
+  padding: 0 12px;
+  outline: none;
+  color: #32325d;
+}
+
+input::placeholder {
+  color: #aab7c4;
+}
+
+.register {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.front,
+.back {
+  /* we are using css grid to stack our child elements here (the 2 CTAs) */
+  grid-area: 1/1;
+}
+
+.front {
+  transition: transform 0.5s ease;
+}
+
+.front.slide-up {
+  /* this makes the form move up by 100% of its height */
+  /* this will be toggled in js */
+  transform: translateY(100%);
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.buttom-small {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.button-outline {
+  background-color: transparent;
+  border: solid 2px #ff3c15;
+  color: var(--orange);
+}
+
+.StripeElement {
+  background-color: #fff;
+  padding: 12px;
+}
+
+/* here we lock the form when it's submitting */
+.form-fields {
+  transition: opacity 0.5 ease;
+}
+
+.processing .form-fields {
+  opacity: 0.5;
+  /* disabled interaction with the form while it's submitting */
+  pointer-events: none;
+}
+
+/* source: https://tobiasahlin.com/spinkit/ */
+.spinner {
+  transition: opacity 0.5s ease;
+  /* initially invisible to the user */
+  opacity: 0;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--orange);
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  z-index: 10;
+  box-shadow: 0 0 11px 0px rgb(254, 145, 127);
+}
+
+/* when we have a processing class on the form... */
+.processing .spinner {
+  /* we make our spinner visible */
+  opacity: 1;
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}

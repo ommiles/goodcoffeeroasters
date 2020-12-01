@@ -1,0 +1,203 @@
+/* Using CSS custom properties (variables): https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* CSS custom properties are set using custom property notation (e.g., --main-color: black;) */
+/* and are accessed using the var() function (e.g., color: var(--main-color);) */
+/* Declaring a custom property is done using a custom property name that begins with a double hyphen (--), and a property value that can be any valid CSS value. */
+/* A common best practice is to define custom properties on the :root pseudo-class (aka root selector), so that it can be applied globally across your HTML document */
+/* Like any other property, this is written inside a ruleset.  See below: */
+:root {
+  /* give the variabla a name and value */
+  /*  */
+  --orange: #ff3c15;
+}
+
+body {
+  font-family: "HK-Grotesk-Bold";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #414141;
+  background-image: url(../img/andrew-seaman-5rwIPczKI-8-unsplash.jpg);
+  background-size: 100vw 100vh;
+  /* x-axis first then y-axis */
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* removes blue underline and hyperlink from anchor tags */
+a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.heading {
+  /* creating a hollow text effect */
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "HK-Grotesk-Bold", sans-serif;
+  font-size: 70px;
+  line-height: 1;
+}
+
+.heading-orange {
+  font-size: 100px;
+  -webkit-text-stroke-color: var(--orange);
+  margin-bottom: 3rem;
+  color: var(--orange);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  /* top and bottom first, then left and right */
+  padding: 24px 72px;
+  font-family: "HK-Grotesk-Bold", sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+blockquote {
+  color: var(--orange);
+  font-size: 36px;
+}
+
+.cite {
+  display: inline-block;
+  color: var(--orange);
+  line-height: 1;
+  /* top and bottom first, then left and right */
+  padding: 24px 18px;
+  border-radius: 100%;
+  border: solid 3px var(--orange);
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.speaker {
+  padding: 3px;
+}
+
+.speaker-image {
+  /* block will allow the image to display at full width */
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 2%;
+  line-height: 1;
+}
+
+.speaker-name,
+.speaker-title {
+  margin: 0;
+  line-height: 1.33;
+}
+
+.speaker-title {
+  color: #979797;
+  font-family: "HK-Grotesk-Regular", sans-serif;
+}
+
+.schedule-container {
+  border: solid 3px var(--orange);
+  /* this gives us natural scrolling behavior on touch screens */
+  -webkit-overflow-scrolling: touch;
+}
+
+.schedule-container::-webkit-scrollbar {
+  width: 12px;
+  height: 14px;
+  background-color: transparent;
+}
+
+/* this changes the color of the scrollbar */
+.schedule-container::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+  border: solid 2px #fff;
+}
+
+.schedule {
+  padding: 48px 24px;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 4;
+}
+
+.schedule-time {
+  color: var(--orange);
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 8px;
+  padding: 3px;
+}
+
+.schedule-margin {
+  margin-right: 15px;
+}
+
+.schedule-day {
+  /* rl stands for right to left */
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  padding: 24px;
+  color: #fff;
+  line-height: 1;
+  background-color: var(--orange);
+  text-align: center;
+}
+
+.schedule-price {
+  font-family: "HK-Grotesk-Regular", sans-serif;
+}
+
+.footer {
+  background-color: grey;
+}
+
+.footer-link {
+  width: 131px;
+  height: 40px;
+  background-image: url(../icons/logo.svg);
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+    background-size: auto 100vh;
+  }
+  .heading {
+    font-size: 50px;
+    background-size: auto 120vh;
+    -webkit-text-stroke-width: 3px;
+  }
+  .button {
+    padding: 18px 32px;
+  }
+  .heading-orange {
+    margin-bottom: 24px;
+  }
+  blockquote {
+    line-height: 1.2;
+  }
+  .schedule-day {
+    padding: 12px;
+  }
+}
