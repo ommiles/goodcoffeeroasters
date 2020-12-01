@@ -1,37 +1,37 @@
 @font-face {
-  font-family: "HK-Grotesk-Bold";
-  src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2"),
-    url("../fonts/HKGrotesk-Bold.woff") format("woff"),
-    url("../fonts/HKGrotesk-Bold.ttf") format("truetype");
+  font-family: 'HK-Grotesk-Bold';
+  src: url('../fonts/HKGrotesk-Bold.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Bold.woff') format('woff'),
+    url('../fonts/HKGrotesk-Bold.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "HK-Grotesk-Medium";
-  src: url("../fonts/HKGrotesk-Medium.woff2") format("woff2"),
-    url("../fonts/HKGrotesk-Medium.woff") format("woff"),
-    url("../fonts/HKGrotesk-Medium.ttf") format("truetype");
+  font-family: 'HK-Grotesk-Medium';
+  src: url('../fonts/HKGrotesk-Medium.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Medium.woff') format('woff'),
+    url('../fonts/HKGrotesk-Medium.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "HK-Grotesk-Regular";
-  src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"),
-    url("../fonts/HKGrotesk-Regular.woff") format("woff"),
-    url("../fonts/HKGrotesk-Regular.ttf") format("truetype");
+  font-family: 'HK-Grotesk-Regular';
+  src: url('../fonts/HKGrotesk-Regular.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Regular.woff') format('woff'),
+    url('../fonts/HKGrotesk-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 
 .regular {
-  font-family: "HK-Grotesk-Regular", sans-serif;
+  font-family: 'HK-Grotesk-Regular', sans-serif;
 }
 
 .medium {
-  font-family: "HK-Grotesk-Medium", sans-serif;
+  font-family: 'HK-Grotesk-Medium', sans-serif;
 }
 
 .bold {
-  font-family: "HK-Grotesk-Bold", sans-serif;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
 }
 
 html,
